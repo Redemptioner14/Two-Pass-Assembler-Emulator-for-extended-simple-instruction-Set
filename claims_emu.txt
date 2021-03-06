@@ -1,0 +1,53 @@
+/*****************************************************************************
+TITLE: Claims																																
+AUTHOR: Prem Bhawnani (1801CS65)
+Declaration of Authorship
+This txt file, claims.txt, is part of the assignment of CS321 - CS322 at the 
+department of Computer Science and Engg, IIT Patna . 
+*****************************************************************************/
+
+Files:
+==========
+*All the files i submitted, emu.cpp and claims.txt, have my name and student id at the start, along with a declaration of 
+authorship.
+
+* Files included are trace output for some test samples, emu.cpp, emu(executable)
+
+Compilation instructions:
+=========================
+	
+	g++ emu.cpp -o emu
+	./emu -[commands] filename.o
+
+	Commands are 
+	-trace  show instruction trace
+	-read   show memory reads
+	-write  show memory writes
+	-before show memory dump before execution
+	-after  show memory dump after execution
+	-wipe   wipe written flags before execution
+	-isa    display ISA
+
+Assumptions:
+============
+    * Mnemonic named “data” is always used at the end of assembly code.
+    * In trace, printed register values(or SP or PC) are values after execution of the current line
+
+NOTE:
+=====
+	* Every claim about assembler is already submitted and it satisfies here too (for emulator)
+	* all the commands work as mentioned above.
+
+The emulator: 
+=============
+(some files which were tested)
+1. test4.o
+	compiles successfully with all functionalities working as mentioned above
+
+2. custom1.o
+	compiles successfully with all functionalities working as mentioned above
+
+Can detect errors (if infinite loop or out of bound access)
+	*reports it as segmentation fault.
+
+all other files are supposed to work fine too.
